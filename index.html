@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Space Between</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="heading">
+      <h1>Space Between <span>♡</span></h1>
+    </header>
+
+    <section class="screen" aria-label="Animación de Space Between">
+      <canvas id="art" aria-label="Animación formada por puntos luminosos"></canvas>
+      <div class="lyrics" id="lyrics" aria-live="polite">
+        <p>Even if we're worlds apart</p>
+        <p>Still in my heart, it will always be</p>
+        <p>You and me, yeah</p>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Controles de la animación">
+      <button id="startBtn" class="primary" type="button" aria-pressed="false">▶ Play</button>
+      <button id="restartBtn" type="button">↺ Reiniciar</button>
+    </section>
+
+    <div class="audio-bar">
+      <input id="audioProgress" type="range" min="0" max="1000" value="0" aria-label="Progreso del audio">
+    </div>
+    <audio id="music" preload="metadata">
+      <source src="Space_Between.mp3" type="audio/mpeg">
+    </audio>
+  </main>
+</body>
+</html>
